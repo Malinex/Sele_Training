@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="587b2050-f97e-4508-aedc-4d48e90c6c7d" name="Default" comment="Removing ATT_cfg from repo">
+    <list default="true" id="587b2050-f97e-4508-aedc-4d48e90c6c7d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -17,8 +17,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="52" selection-start-column="52" selection-end-column="52" />
+            <state relative-caret-position="17">
+              <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -28,6 +28,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="Malinex &lt;32434547+malinex@users.noreply.github.com&gt;" />
         <option value="Rapis" />
       </list>
     </option>
@@ -222,7 +223,21 @@
       <option name="project" value="LOCAL" />
       <updated>1532110675326</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Removing ATT_cfg from repo">
+      <created>1532111703122</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1532111703122</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Removing ATT_cfg file">
+      <created>1532111999387</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1532111999387</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -255,7 +270,8 @@
     <MESSAGE value="stworzenie pliku ATT_cfg" />
     <MESSAGE value="Added proper path to config file in gitignore" />
     <MESSAGE value="Removing ATT_cfg from repo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removing ATT_cfg from repo" />
+    <MESSAGE value="Removing ATT_cfg file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removing ATT_cfg file" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/ATT_cfg">
@@ -263,8 +279,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="52" selection-start-column="52" selection-end-column="52" />
+        <state relative-caret-position="17">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
         </state>
       </provider>
     </entry>
