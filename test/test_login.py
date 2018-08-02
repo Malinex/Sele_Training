@@ -8,19 +8,27 @@ def app(request):
     request.addfinalizer(fixture.destroy)
     return fixture
 
+
 def test_login(app):
     wd = app.wd
-    app.session.login(username="lmalinowski", password="malin1")
-    assert wd.find_element_by_id("username_logged_in").text == "lmalinowski"
-    app.session.logout()
+    app.session.login("lmalinowski", "malin1")
+    assert app.session.get_logged_user_name() == "lmalinowski"
+
+
+
+
 
 def test_check_web(app):
     wd = app.wd
     app.session.login(username="lmalinowski", password="malin1")
     assert "attnauka.webd.pro" in wd.current_url
 
+    """
+    assert wd.title == "dupa jasia"
+    
+    """
+
 def test_subforum_page(app):
     wd = app.wd
     app.session.login(username="lmalinowski", password="malin1")
     app.session.open_subforum_page()
-    assert wd.find_element_by_id("forum-search").text
