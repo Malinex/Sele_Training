@@ -24,17 +24,27 @@ class SessionHelper:
     def logout(self):
         wd = self.app.wd
 
-    def create_new_topic(self):
-        pass
-
-    def open_subforum_page(self):
-        wd = self.app.wd
-
     def get_logged_user_name(self):
         wd = self.app.wd
         return wd.find_element_by_id("username_logged_in").text
 
+    def open_subforum_page(self, ):
+        wd = self.app.wd
+        subforums = wd.find_elements_by_class_name("forumtitle")
+        for e in subforums:
+             if e == "Łukasz":
+                  e.click()
 
+    def assert_get_tittle_in_subforum(self):
+        wd = self.app.wd
+        element = wd.find_elements_by_class_name("forum-title")
+        for e in element:
+             if e == "Łukasz":
+                  assert True
+
+    def create_new_topic(self):
+        wd = self.app.wd
+        wd.find_element_by_class_name("button").click()
 
     """
     nazwaForum <- wejście
