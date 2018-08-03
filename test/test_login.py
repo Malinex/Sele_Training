@@ -17,12 +17,12 @@ def test_login(app):
 
 def test_check_web(app):
     wd = app.wd
-    app.session.login(username="lmalinowski", password="malin1")
+    app.session.login("lmalinowski", "malin1")
     assert wd.title == "ATT Nauka - Index page"
-   
 """
+
 
 def test_subforum_page(app):
     wd = app.wd
-    app.session.login(username="lmalinowski", password="malin1")
+    app.session.login("lmalinowski", "malin1")
     app.session.open_subforum_page()
