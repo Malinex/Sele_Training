@@ -75,8 +75,12 @@ class SessionHelper:
         pmMessageBox.click()
         pmMessageBox.clear()
         pmMessageBox.send_keys(message)
-        wd.find_element_by_name("post").click()
-        wd.find_element_by_name("post").click()
+        submitMessage = wd.find_element_by_name("post")
+        submitMessage.click()
+        button = wd.find_elements_by_class_name("button1")
+        for b in button:
+            if b == "submit":
+                b.click()
 
     """
     nazwaForum <- wejście
