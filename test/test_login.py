@@ -1,4 +1,5 @@
 import pytest
+
 from fixture.application import Application
 
 
@@ -31,5 +32,8 @@ def test_subforum_page(app):
 def test_create_new_topic_on_subforum(app):
     wd = app.wd
     app.session.login("lmalinowski", "malin1")
-    app.session.open_subforum_page()
-    app.session.create_new_topic()
+    app.session.open_subforum_page2()
+
+    app.session.create_new_topic("123", "567")
+
+

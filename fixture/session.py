@@ -1,4 +1,4 @@
-
+import time
 
 
 
@@ -28,12 +28,15 @@ class SessionHelper:
         wd = self.app.wd
         return wd.find_element_by_id("username_logged_in").text
 
-    def open_subforum_page(self, ):
+    def open_subforum_page(self):
         wd = self.app.wd
         subforums = wd.find_elements_by_class_name("forumtitle")
         for e in subforums:
              if e == "Łukasz":
                   e.click()
+    def open_subforum_page2(self):
+        wd = self.app.wd
+        wd.find_element_by_link_text("Łukasz").click()
 
     def assert_get_tittle_in_subforum(self):
         wd = self.app.wd
@@ -42,9 +45,18 @@ class SessionHelper:
              if e == "Łukasz":
                   assert True
 
-    def create_new_topic(self):
+    def create_new_topic(self, subject, message):
         wd = self.app.wd
-        wd.find_element_by_class_name("button").click()
+        wd.find_element_by_link_text("New Topic").click()
+        subjectBox = wd.find_element_by_id("subject")
+        subjectBox.click()
+        subjectBox.clear()
+        subjectBox.send_keys(subject)
+        messageBox = wd.find_element_by_id("message")
+        messageBox.click()
+        messageBox.clear()
+        messageBox.send_keys(message)
+        wd.find_element_by_name("post").click()
 
     """
     nazwaForum <- wejście
