@@ -58,6 +58,7 @@ class SessionHelper:
         messageBox.send_keys(message)
         wd.find_element_by_name("post").click()
 
+
     """
     nazwaForum <- wejście
     sprawdz gdzie na liscie forów jest takie o tej nazwie <- elementy -> for icz
