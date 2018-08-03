@@ -58,6 +58,25 @@ class SessionHelper:
         messageBox.send_keys(message)
         wd.find_element_by_name("post").click()
 
+    def create_new_priv_message(self, recipient, subject, message):
+        wd = self.app.wd
+        wd.find_element_by_partial_link_text("Private messages").click()
+        wd.find_element_by_link_text("New PM").click()
+        recipientBox = wd.find_element_by_id("username_list")
+        recipientBox.click()
+        recipientBox.clear()
+        recipientBox.send_keys(recipient)
+        pmSubjectBox = wd.find_element_by_id("subject")
+        pmSubjectBox.click()
+        pmSubjectBox.click()
+        pmSubjectBox.clear()
+        pmSubjectBox.send_keys(subject)
+        pmMessageBox = wd.find_element_by_id("message")
+        pmMessageBox.click()
+        pmMessageBox.clear()
+        pmMessageBox.send_keys(message)
+        wd.find_element_by_name("post").click()
+        wd.find_element_by_name("post").click()
 
     """
     nazwaForum <- wejście

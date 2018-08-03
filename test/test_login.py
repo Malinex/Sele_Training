@@ -37,3 +37,8 @@ def test_create_new_topic_on_subforum(app):
     assert topics_after_submit is not topics_before_submit
 
 """
+
+def test_send_priv_message(app):
+    wd = app.wd
+    app.session.login("lmalinowski", "malin1")
+    app.session.create_new_priv_message("lmalinowski", "test_subject", "test_pm")
