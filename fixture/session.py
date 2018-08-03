@@ -21,7 +21,6 @@ class SessionHelper:
         passwordBox.send_keys(password)
         wd.find_element_by_class_name("button2").click()
 
-
     def logout(self):
         wd = self.app.wd
 
@@ -30,6 +29,11 @@ class SessionHelper:
 
     def open_subforum_page(self):
         wd = self.app.wd
+
+    def get_logged_user_name(self):
+        wd = self.app.wd
+        return wd.find_element_by_id("username_logged_in").text
+
 
 
     """
@@ -56,6 +60,3 @@ class SessionHelper:
     
     """
 
-    def get_logged_user_name(self):
-        wd = self.app.wd
-        return wd.find_element_by_id("username_logged_in").text
