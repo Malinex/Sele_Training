@@ -1,5 +1,8 @@
 {
   "BaseUrl" : "http://attnauka.webd.pro/forum/",
   "username" : "lmalinowski",
-  "password" : "malin1"
+  "password" : "malin1",
+  "recipient" : "elem",
+  "subject" : "testsubject",
+  "message" : "message"
 }
