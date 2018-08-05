@@ -1,5 +1,5 @@
 import time
-
+from selenium.webdriver.support.ui import WebDriverWait
 
 
 
@@ -58,6 +58,11 @@ class SessionHelper:
         messageBox.send_keys(message)
         wd.find_element_by_name("post").click()
 
+    def go_to_outbox(self):
+        wd = self.app.wd
+        wd.find_element_by_partial_link_text("Private messages").click()
+        wd.find_element_by_partial_link_text("Outbox").click()
+
     def create_new_priv_message(self, recipient, subject, message):
         wd = self.app.wd
         wd.find_element_by_partial_link_text("Private messages").click()
@@ -76,11 +81,11 @@ class SessionHelper:
         pmMessageBox.clear()
         pmMessageBox.send_keys(message)
         submitMessage = wd.find_element_by_name("post")
+        time.sleep(1)
         submitMessage.click()
-        button = wd.find_elements_by_class_name("button1")
-        for b in button:
-            if b == "submit":
-                b.click()
+        time.sleep(2)
+        wd.find_element_by_name("post").click()
+
 
     """
     nazwaForum <- wejście
