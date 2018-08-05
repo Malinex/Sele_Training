@@ -81,7 +81,7 @@ class SessionHelper:
         pmMessageBox.clear()
         pmMessageBox.send_keys(message)
         submitMessage = wd.find_element_by_name("post")
-        time.sleep(1)
+        time.sleep(2)
         submitMessage.click()
         time.sleep(2)
         wd.find_element_by_name("post").click()
