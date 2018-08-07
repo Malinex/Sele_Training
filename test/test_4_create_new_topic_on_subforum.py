@@ -41,5 +41,5 @@ YAGNI -> you aren't gonna need it
 KISS -> keep it simple stupid
 SOLID -> read it
 
-
+#
 """
