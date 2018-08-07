@@ -1,6 +1,6 @@
 import pytest
 from fixture.application import Application
-
+import time
 
 @pytest.fixture
 def app(request):
@@ -11,5 +11,6 @@ def app(request):
 def test_get_subforum_page(app):
     wd = app.wd
     app.session.login("lmalinowski", "malin1")
-    app.session.open_subforum_page2()
+    app.session.open_subforum_page()
+    time.sleep(2)
     assert app.session.get_topic_tittle_name() == "Łukasz"

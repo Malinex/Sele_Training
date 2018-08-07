@@ -6,18 +6,15 @@
     </enabled-run-configurations>
   </component>
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/fixture/session.py" line="90" />
+    <bookmark url="file://$PROJECT_DIR$/fixture/session.py" line="91" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8fbb0fc5-20f1-46e1-b5e7-3b6b58910e42" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test/test_1_login.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test_2_check_web.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test_3_get_subforum_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test_4_create_new_topic_on_subforum.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test_5_send_priv_message.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fixture/session.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/session.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_login.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_3_get_subforum_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_3_get_subforum_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_4_create_new_topic_on_subforum.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_4_create_new_topic_on_subforum.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_5_send_priv_message.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_5_send_priv_message.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,28 +38,28 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="json" value="1" />
-          <entry key="py" value="17" />
+          <entry key="py" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JSON" value="1" />
-          <entry key="Python" value="17" />
+          <entry key="Python" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="12" />
           <entry key="json" value="53" />
-          <entry key="py" value="3858" />
-          <entry key="txt" value="305" />
+          <entry key="py" value="4148" />
+          <entry key="txt" value="353" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="53" />
-          <entry key="PLAIN_TEXT" value="317" />
-          <entry key="Python" value="3858" />
+          <entry key="PLAIN_TEXT" value="365" />
+          <entry key="Python" value="4148" />
         </counts>
       </usages-collector>
     </session>
@@ -72,19 +69,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fixture/application.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-                <marker date="1533320569835" expanded="true" signature="91:92" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/test_1_login.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -100,8 +84,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/test_3_get_subforum_page.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+            <state relative-caret-position="269">
+              <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -110,24 +94,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cfg_ATT.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fixture/session.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="82" column="8" lean-forward="true" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="29" />
+            <state relative-caret-position="220">
+              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
-                <marker date="1533652679823" expanded="true" signature="640:649" ph="..." />
-                <marker date="1533652679823" expanded="true" signature="826:2817" ph="..." />
-                <marker date="1533652679823" expanded="true" signature="1626:1793" ph="..." />
+                <marker date="1533661481865" expanded="true" signature="640:649" ph="..." />
+                <marker date="1533661481865" expanded="true" signature="826:2837" ph="..." />
+                <marker date="1533661481865" expanded="true" signature="1646:1813" ph="..." />
               </folding>
             </state>
           </provider>
@@ -136,8 +111,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/test_4_create_new_topic_on_subforum.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="313">
+              <caret line="18" column="85" selection-start-line="18" selection-start-column="85" selection-end-line="18" selection-end-column="85" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/test_5_send_priv_message.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -169,8 +156,11 @@
         <option value="$PROJECT_DIR$/test/test_send_priv_message.py" />
         <option value="$PROJECT_DIR$/test/test_login.py" />
         <option value="$PROJECT_DIR$/test/test_create_new_topic_on_subforum.py" />
-        <option value="$PROJECT_DIR$/fixture/session.py" />
         <option value="$PROJECT_DIR$/test/test_get_subforum_page.py" />
+        <option value="$PROJECT_DIR$/test/test_3_get_subforum_page.py" />
+        <option value="$PROJECT_DIR$/test/test_5_send_priv_message.py" />
+        <option value="$PROJECT_DIR$/fixture/session.py" />
+        <option value="$PROJECT_DIR$/test/test_4_create_new_topic_on_subforum.py" />
       </list>
     </option>
   </component>
@@ -230,20 +220,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in test">
-    <configuration name="pytest for test.test_1_login" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.pytest in test_4_create_new_topic_on_subforum.py">
+    <configuration name="session" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Sele_2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/fixture" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test.test_1_login&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/fixture/session.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <configuration name="pytest in test" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
@@ -258,36 +254,6 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/test&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest in test_1_login.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="Sele_2" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_1_login.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest in test_2_check_web.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="Sele_2" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_2_check_web.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
@@ -306,20 +272,50 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest in test_4_create_new_topic_on_subforum.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Sele_2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_4_create_new_topic_on_subforum.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in test_5_send_priv_message.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Sele_2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_5_send_priv_message.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Python tests.pytest for test.test_1_login" />
-      <item itemvalue="Python tests.pytest in test_2_check_web.py" />
-      <item itemvalue="Python tests.pytest in test_1_login.py" />
       <item itemvalue="Python tests.pytest in test_3_get_subforum_page.py" />
       <item itemvalue="Python tests.pytest in test" />
+      <item itemvalue="Python tests.pytest in test_4_create_new_topic_on_subforum.py" />
+      <item itemvalue="Python.session" />
+      <item itemvalue="Python tests.pytest in test_5_send_priv_message.py" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest in test" />
+        <item itemvalue="Python tests.pytest in test_4_create_new_topic_on_subforum.py" />
         <item itemvalue="Python tests.pytest in test_3_get_subforum_page.py" />
-        <item itemvalue="Python tests.pytest in test_1_login.py" />
-        <item itemvalue="Python tests.pytest in test_2_check_web.py" />
-        <item itemvalue="Python tests.pytest for test.test_1_login" />
+        <item itemvalue="Python tests.pytest in test_5_send_priv_message.py" />
+        <item itemvalue="Python.session" />
+        <item itemvalue="Python tests.pytest in test" />
       </list>
     </recent_temporary>
   </component>
@@ -439,51 +435,58 @@
       <option name="project" value="LOCAL" />
       <updated>1533501489913</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="created new files per test">
+      <created>1533653055904</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1533653055904</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_in_test_get_subforum_page_py - 2018.08.07 at 16h 21m 36s.xml">
-      <configuration name="pytest in test_get_subforum_page.py" configurationId="tests" />
+    <history-entry file="pytest_in_test_4_create_new_topic_on_subforum_py - 2018.08.07 at 18h 59m 12s.xml">
+      <configuration name="pytest in test_4_create_new_topic_on_subforum.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_get_subforum_page_py - 2018.08.07 at 16h 21m 56s.xml">
-      <configuration name="pytest in test_get_subforum_page.py" configurationId="tests" />
+    <history-entry file="pytest_in_test_4_create_new_topic_on_subforum_py - 2018.08.07 at 19h 00m 15s.xml">
+      <configuration name="pytest in test_4_create_new_topic_on_subforum.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_get_subforum_page_py - 2018.08.07 at 16h 22m 42s.xml">
-      <configuration name="pytest in test_get_subforum_page.py" configurationId="tests" />
+    <history-entry file="pytest_in_test_4_create_new_topic_on_subforum_py - 2018.08.07 at 19h 02m 40s.xml">
+      <configuration name="pytest in test_4_create_new_topic_on_subforum.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_get_subforum_page_py - 2018.08.07 at 16h 25m 11s.xml">
-      <configuration name="pytest in test_get_subforum_page.py" configurationId="tests" />
+    <history-entry file="pytest_in_test_4_create_new_topic_on_subforum_py - 2018.08.07 at 19h 03m 32s.xml">
+      <configuration name="pytest in test_4_create_new_topic_on_subforum.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_get_subforum_page_py - 2018.08.07 at 16h 26m 07s.xml">
-      <configuration name="pytest in test_get_subforum_page.py" configurationId="tests" />
+    <history-entry file="pytest_in_test_4_create_new_topic_on_subforum_py - 2018.08.07 at 19h 04m 50s.xml">
+      <configuration name="pytest in test_4_create_new_topic_on_subforum.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_get_subforum_page_py - 2018.08.07 at 16h 26m 55s.xml">
-      <configuration name="pytest in test_get_subforum_page.py" configurationId="tests" />
+    <history-entry file="pytest_in_test_4_create_new_topic_on_subforum_py - 2018.08.07 at 19h 05m 22s.xml">
+      <configuration name="pytest in test_4_create_new_topic_on_subforum.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_get_subforum_page_py - 2018.08.07 at 16h 28m 00s.xml">
-      <configuration name="pytest in test_get_subforum_page.py" configurationId="tests" />
+    <history-entry file="pytest_in_test_4_create_new_topic_on_subforum_py - 2018.08.07 at 19h 05m 43s.xml">
+      <configuration name="pytest in test_4_create_new_topic_on_subforum.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_get_subforum_page_py - 2018.08.07 at 16h 28m 46s.xml">
-      <configuration name="pytest in test_get_subforum_page.py" configurationId="tests" />
+    <history-entry file="pytest_in_test_4_create_new_topic_on_subforum_py - 2018.08.07 at 19h 06m 07s.xml">
+      <configuration name="pytest in test_4_create_new_topic_on_subforum.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_get_subforum_page_py - 2018.08.07 at 16h 38m 07s.xml">
-      <configuration name="pytest in test_get_subforum_page.py" configurationId="tests" />
+    <history-entry file="pytest_in_test_4_create_new_topic_on_subforum_py - 2018.08.07 at 19h 06m 36s.xml">
+      <configuration name="pytest in test_4_create_new_topic_on_subforum.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_get_subforum_page_py - 2018.08.07 at 16h 39m 47s.xml">
-      <configuration name="pytest in test_get_subforum_page.py" configurationId="tests" />
+    <history-entry file="pytest_in_test_4_create_new_topic_on_subforum_py - 2018.08.07 at 19h 07m 04s.xml">
+      <configuration name="pytest in test_4_create_new_topic_on_subforum.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4978903" visible="true" weight="0.24983476" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4978903" visible="true" weight="0.24983476" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5021097" side_tool="true" weight="0.24983476" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -515,7 +518,8 @@
     <MESSAGE value="looking for good assert for task 5" />
     <MESSAGE value="looking for good assert for task 5x2" />
     <MESSAGE value="changes in cfg_ATT" />
-    <option name="LAST_COMMIT_MESSAGE" value="changes in cfg_ATT" />
+    <MESSAGE value="created new files per test" />
+    <option name="LAST_COMMIT_MESSAGE" value="created new files per test" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/Downloads/Untitled.py">
@@ -543,16 +547,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_5_send_priv_message.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fixture/application.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -560,19 +554,6 @@
           <folding>
             <element signature="e#0#41#0" expanded="true" />
             <marker date="1533320569835" expanded="true" signature="91:92" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fixture/session.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="82" column="8" lean-forward="true" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-            <marker date="1533652679823" expanded="true" signature="640:649" ph="..." />
-            <marker date="1533652679823" expanded="true" signature="826:2817" ph="..." />
-            <marker date="1533652679823" expanded="true" signature="1626:1793" ph="..." />
           </folding>
         </state>
       </provider>
@@ -587,20 +568,85 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_3_get_subforum_page.py">
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/_pytest/python.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+        <state relative-caret-position="132">
+          <caret line="195" selection-start-line="195" selection-end-line="195" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pluggy/manager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pluggy/hooks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="257" selection-start-line="257" selection-end-line="257" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="1657" selection-start-line="1657" selection-end-line="1657" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/_pytest/runner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pluggy/callers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="180" selection-start-line="180" selection-end-line="180" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_5_send_priv_message.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_3_get_subforum_page.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fixture/session.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <marker date="1533661481865" expanded="true" signature="640:649" ph="..." />
+            <marker date="1533661481865" expanded="true" signature="826:2837" ph="..." />
+            <marker date="1533661481865" expanded="true" signature="1646:1813" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/test_4_create_new_topic_on_subforum.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="313">
+          <caret line="18" column="85" selection-start-line="18" selection-start-column="85" selection-end-line="18" selection-end-column="85" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

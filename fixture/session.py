@@ -32,8 +32,9 @@ class SessionHelper:
         wd = self.app.wd
         subforums = wd.find_elements_by_class_name("forumtitle")
         for e in subforums:
-             if e.text == "Łukasz":
-                 e.click()
+            if e.text == "Łukasz":
+                e.click()
+                break
 
     def open_subforum_page2(self):
         wd = self.app.wd
