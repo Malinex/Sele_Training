@@ -1,6 +1,6 @@
 import time
 from selenium.webdriver.support.ui import WebDriverWait
-
+import json
 
 
 class SessionHelper:
@@ -32,18 +32,12 @@ class SessionHelper:
         wd = self.app.wd
         subforums = wd.find_elements_by_class_name("forumtitle")
         for e in subforums:
-             if e == "Łukasz":
-                  e.click()
+             if e.text == "Łukasz":
+                 e.click()
+
     def open_subforum_page2(self):
         wd = self.app.wd
         wd.find_element_by_link_text("Łukasz").click()
-
-    def assert_get_tittle_in_subforum(self):
-        wd = self.app.wd
-        element = wd.find_elements_by_class_name("forum-title")
-        for e in element:
-             if e == "Łukasz":
-                  assert True
 
     def create_new_topic(self, subject, message):
         wd = self.app.wd
@@ -85,6 +79,10 @@ class SessionHelper:
         submitMessage.click()
         time.sleep(2)
         wd.find_element_by_name("post").click()
+
+    def get_topic_tittle_name(self):
+        wd = self.app.wd
+        return wd.find_element_by_class_name("forum-title").text
 
 
     """
