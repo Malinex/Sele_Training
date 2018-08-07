@@ -13,5 +13,3 @@ def test_login(app):
     app.session.login("lmalinowski", "malin1")
     assert app.session.get_logged_user_name() == "lmalinowski"
 
-
-

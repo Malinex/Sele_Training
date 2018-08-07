@@ -93,7 +93,6 @@ class SessionHelper:
     sprawdz czy wszedłeś w dobre forum <- NIE SPRAWDZAJ LINKÓW, 
     find_element a find_elements
     
-    
     Board > Łukasz > dupa
     //blalbla/bla/bla[3]/bla <-
     
