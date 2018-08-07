@@ -1,7 +1,7 @@
 import pytest
 from fixture.application import Application
 
-
+# h87 daje okejke
 @pytest.fixture
 def app(request):
     fixture = Application()

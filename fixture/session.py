@@ -28,21 +28,24 @@ class SessionHelper:
         wd = self.app.wd
         return wd.find_element_by_id("username_logged_in").text
 
-    def open_subforum_page(self):
+    def open_subforum_page(self, subforum_title):
         wd = self.app.wd
         subforums = wd.find_elements_by_class_name("forumtitle")
         for e in subforums:
-            if e.text == "Łukasz":
+            if e.text == subforum_title:
                 e.click()
+                # wait until element is visible / presence -> by_class_name("forum-title")
                 break
+        #
 
-    def open_subforum_page2(self):
+    def open_subforum_by_nav_bar(self):
         wd = self.app.wd
         wd.find_element_by_link_text("Łukasz").click()
 
     def create_new_topic(self, subject, message):
         wd = self.app.wd
         wd.find_element_by_link_text("New Topic").click()
+        # ("//*[@id='xxx']") "button xxx"  //a == tagname ("a")  find_element_xxx.find_element_by_xpath("//")
         subjectBox = wd.find_element_by_id("subject")
         subjectBox.click()
         subjectBox.clear()
@@ -55,12 +58,15 @@ class SessionHelper:
 
     def go_to_outbox(self):
         wd = self.app.wd
-        wd.find_element_by_partial_link_text("Private messages").click()
+        self.go_to_private_messages(wd)
         wd.find_element_by_partial_link_text("Outbox").click()
+
+    def go_to_private_messages(self, wd):
+        wd.find_element_by_partial_link_text("Private messages").click()
 
     def create_new_priv_message(self, recipient, subject, message):
         wd = self.app.wd
-        wd.find_element_by_partial_link_text("Private messages").click()
+        self.go_to_private_messages(wd)
         wd.find_element_by_link_text("New PM").click()
         recipientBox = wd.find_element_by_id("username_list")
         recipientBox.click()
@@ -68,20 +74,21 @@ class SessionHelper:
         recipientBox.send_keys(recipient)
         pmSubjectBox = wd.find_element_by_id("subject")
         pmSubjectBox.click()
-        pmSubjectBox.click()
         pmSubjectBox.clear()
         pmSubjectBox.send_keys(subject)
         pmMessageBox = wd.find_element_by_id("message")
         pmMessageBox.click()
         pmMessageBox.clear()
         pmMessageBox.send_keys(message)
+        #
         submitMessage = wd.find_element_by_name("post")
         time.sleep(2)
         submitMessage.click()
         time.sleep(2)
-        wd.find_element_by_name("post").click()
 
-    def get_topic_tittle_name(self):
+        submitMessage.click()
+
+    def get_subforum_name(self):
         wd = self.app.wd
         return wd.find_element_by_class_name("forum-title").text
 
