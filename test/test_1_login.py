@@ -12,5 +12,3 @@ def test_login(app):
     wd = app.wd
     app.session.login("lmalinowski", "malin1")
     assert app.session.get_logged_user_name() == "lmalinowski"
-
-#

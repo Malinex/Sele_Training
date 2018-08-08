@@ -1,6 +1,6 @@
 import pytest
 from fixture.application import Application
-#
+
 # nie dokonczone
 @pytest.fixture
 def app(request):

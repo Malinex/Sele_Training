@@ -16,11 +16,11 @@ def test_create_new_topic_on_subforum(app):
     app.session.login("lmalinowski", "malin1")
     app.session.open_subforum_page()
     ##
-    number_of_topics_before_submit = number_of_topics(wd)
+    number_of_topics_before_submit = app.session.number_of_topics(wd)
     app.session.create_new_topic(title, description)
     time.sleep(3)
     app.session.open_subforum_by_nav_bar()
-    number_of_topics_after_submit = number_of_topics(wd)
+    number_of_topics_after_submit = app.session.number_of_topics(wd)
     assert number_of_topics_after_submit == number_of_topics_before_submit+1
     # wada nr 1: nie sprawdza czy jest więcej, sprawdza czy są rózne długości
     # wada nr 2: ważniejsza:: nie sprawdza czy stworzył się TEN konkretny temat
@@ -31,8 +31,7 @@ def test_create_new_topic_on_subforum(app):
     # board > Łukasz > dupa > zosia > Łukasz
 
 
-def number_of_topics(wd):
-    return len(wd.find_elements_by_class_name("topictitle"))
+
 
 
 """
@@ -40,6 +39,4 @@ DRY -> Don't repeat yourself
 YAGNI -> you aren't gonna need it
 KISS -> keep it simple stupid
 SOLID -> read it
-
-#
 """

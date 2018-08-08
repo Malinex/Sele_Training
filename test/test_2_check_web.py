@@ -2,6 +2,7 @@ import pytest
 from fixture.application import Application
 
 # nie ma okejki
+# h87 da okejke
 
 @pytest.fixture
 def app(request):
@@ -12,5 +13,3 @@ def app(request):
 def test_check_web(app):
     wd = app.wd
     assert wd.title == "ATT Nauka - Index page"
-
-    #

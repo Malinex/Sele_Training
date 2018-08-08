@@ -92,6 +92,8 @@ class SessionHelper:
         wd = self.app.wd
         return wd.find_element_by_class_name("forum-title").text
 
+    def number_of_topics(wd):
+        return len(wd.find_elements_by_class_name("topictitle"))
 
     """
     nazwaForum <- wejście
