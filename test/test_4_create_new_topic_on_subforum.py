@@ -11,25 +11,15 @@ def app(request):
 
 def test_create_new_topic_on_subforum(app):
     wd = app.wd
-    title = "123"
-    description = "567"
+    subject_of_topic = app.session.random_chars(5, 15)
+    content_of_topic = app.session.random_chars(50, 100)
+    subforum_title = "Łukasz"
     app.session.login("lmalinowski", "malin1")
-    app.session.open_subforum_page()
-    ##
-    number_of_topics_before_submit = app.session.number_of_topics()
-    app.session.create_new_topic(title, description)
-    time.sleep(3)
-    app.session.open_subforum_by_nav_bar()
-    number_of_topics_after_submit = app.session.number_of_topics()
-    assert number_of_topics_after_submit == number_of_topics_before_submit+1
-    # wada nr 1: nie sprawdza czy jest więcej, sprawdza czy są rózne długości
-    # wada nr 2: ważniejsza:: nie sprawdza czy stworzył się TEN konkretny temat
-    # .topictitile => text == title -> jest -> ile jest (3)
-    # sprawdzasz ILE elementów o takiej nazwie jest
-    # potem sprawdzasz po dodaniu ile elementów o takiej nazwie jest
-
-    # board > Łukasz > dupa > zosia > Łukasz
-
+    app.session.open_subforum_page(subforum_title)
+    app.session.create_new_topic(subject_of_topic, content_of_topic)
+    app.session.login("lmalinowski", "malin1")
+    app.session.open_subforum_page(subforum_title)
+    assert app.session.check_subject_in_list_of_topics(subject_of_topic)
 
 
 

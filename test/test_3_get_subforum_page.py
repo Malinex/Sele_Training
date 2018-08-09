@@ -15,5 +15,4 @@ def test_get_subforum_page(app):
     subforum_title = "Łukasz"
     app.session.login("lmalinowski", "malin1")
     app.session.open_subforum_page(subforum_title)
-    time.sleep(2)
     assert app.session.get_subforum_name() == subforum_title
