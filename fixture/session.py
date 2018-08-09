@@ -5,6 +5,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 import string
 from random import *
+from cfg_ATT import config
 
 class SessionHelper:
 
@@ -13,7 +14,7 @@ class SessionHelper:
 
     def open_home_page(self):
         wd = self.app.wd
-        wd.get("http://attnauka.webd.pro/forum/")
+        wd.get(config.BaseUrl)
 
     def login(self, username, password):
         wd = self.app.wd

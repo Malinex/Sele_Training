@@ -1,5 +1,6 @@
 import pytest
 from fixture.application import Application
+from cfg_ATT import config
 
 # nie ma okejki
 # h87 da okejke

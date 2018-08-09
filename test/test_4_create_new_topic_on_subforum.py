@@ -1,5 +1,6 @@
 import pytest
 from fixture.application import Application
+from cfg_ATT import config
 import time
 # nie ma okejki, sleeper itp
 
@@ -13,11 +14,11 @@ def test_create_new_topic_on_subforum(app):
     wd = app.wd
     subject_of_topic = app.session.random_chars(5, 15)
     content_of_topic = app.session.random_chars(50, 100)
-    subforum_title = "Łukasz"
-    app.session.login("lmalinowski", "malin1")
+    subforum_title = config.main_subforum_title
+    app.session.login(config.username, config.password)
     app.session.open_subforum_page(subforum_title)
     app.session.create_new_topic(subject_of_topic, content_of_topic)
-    app.session.login("lmalinowski", "malin1")
+    app.session.login(config.username, config.password)
     app.session.open_subforum_page(subforum_title)
     assert app.session.check_subject_in_list_of_topics(subject_of_topic)
 
