@@ -14,7 +14,7 @@ class SessionHelper:
 
     def open_home_page(self):
         wd = self.app.wd
-        wd.get(config.BaseUrl)
+        wd.get(config.base_url)
 
     def login(self, username, password):
         wd = self.app.wd
