@@ -10,6 +10,5 @@ def app(request):
     return fixture
 
 def test_login(app):
-    wd = app.wd
     app.session.login(config.username, config.password)
     assert app.session.get_logged_user_name() == config.username

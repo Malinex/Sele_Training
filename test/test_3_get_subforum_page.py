@@ -12,7 +12,6 @@ def app(request):
     return fixture
 
 def test_get_subforum_page(app):
-    wd = app.wd
     subforum_title = config.main_subforum_title
     app.session.login(config.username, config.password)
     app.session.open_subforum_page(subforum_title)
