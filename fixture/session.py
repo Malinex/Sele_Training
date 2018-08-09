@@ -79,7 +79,7 @@ class SessionHelper:
         wd = self.app.wd
         wd.find_element_by_xpath("//*[@id='nav-main']/li[4]/a/span").click()
 
-    def go_to_outbox(self):
+    def go_to_outbox_from_private_messages(self):
         wd = self.app.wd
         self.go_to_private_messages(self)
         private_messages_menu = wd.find_elements_by_tag_name("span")
@@ -87,6 +87,10 @@ class SessionHelper:
             if e.text == "Outbox":
                 e.click()
                 break
+
+    def go_to_outbox_after_sending_a_message(self):
+        wd = self.app.wd
+        wd.find_element_by_xpath("//a[contains(text(),'Return to your “Outbox” folder')]").click()
 
     def create_new_priv_message(self, recipient, subject, message):
         wd = self.app.wd
@@ -106,10 +110,18 @@ class SessionHelper:
         pm_message_box.click()
         pm_message_box.clear()
         pm_message_box.send_keys(message)
-        WebDriverWait(wd, 10)
         time.sleep(2)
         submit_message = wd.find_element_by_name("post")
         submit_message.click()
+
+    def check_message_in_outbox(self, subject):
+        wd = self.app.wd
+        messages_in_outbox = wd.find_elements_by_class_name("topictitle")
+        for e in messages_in_outbox:
+            if e.text == subject:
+                return True
+            else:
+                return False
 
     def get_subforum_name(self):
         wd = self.app.wd
