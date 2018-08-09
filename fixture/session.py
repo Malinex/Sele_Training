@@ -1,7 +1,9 @@
 import time
 from selenium.webdriver.support.ui import WebDriverWait
 import json
-
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.by import By
 
 class SessionHelper:
 
@@ -20,6 +22,10 @@ class SessionHelper:
         passwordBox.clear()
         passwordBox.send_keys(password)
         wd.find_element_by_class_name("button2").click()
+
+    def wait(self):
+        wd = self.app.wd
+        wait = WebDriverWait(wd, 10)
 
     def logout(self):
         wd = self.app.wd
@@ -62,16 +68,18 @@ class SessionHelper:
         wd.find_element_by_partial_link_text("Outbox").click()
 
     def go_to_private_messages(self, wd):
-        wd.find_element_by_partial_link_text("Private messages").click()
+        wd.find_element_by_xpath("//*[@id='nav-main']/li[4]/a/span").click()
 
     def create_new_priv_message(self, recipient, subject, message):
         wd = self.app.wd
         self.go_to_private_messages(wd)
-        wd.find_element_by_link_text("New PM").click()
+        wd.find_element_by_xpath("//a[@class='button']").click()
         recipientBox = wd.find_element_by_id("username_list")
         recipientBox.click()
         recipientBox.clear()
         recipientBox.send_keys(recipient)
+        addRecipient = wd.find_element_by_name("add_to")
+        addRecipient.click()
         pmSubjectBox = wd.find_element_by_id("subject")
         pmSubjectBox.click()
         pmSubjectBox.clear()
@@ -80,19 +88,16 @@ class SessionHelper:
         pmMessageBox.click()
         pmMessageBox.clear()
         pmMessageBox.send_keys(message)
-        #
+        WebDriverWait(wd, 10)
         submitMessage = wd.find_element_by_name("post")
-        time.sleep(2)
-        submitMessage.click()
-        time.sleep(2)
-
         submitMessage.click()
 
     def get_subforum_name(self):
         wd = self.app.wd
         return wd.find_element_by_class_name("forum-title").text
 
-    def number_of_topics(wd):
+    def number_of_topics(self):
+        wd = self.app.wd
         return len(wd.find_elements_by_class_name("topictitle"))
 
     """

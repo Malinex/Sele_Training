@@ -12,8 +12,8 @@ def test_send_priv_message(app):
     wd = app.wd
     app.session.login("lmalinowski", "malin1")
     app.session.go_to_outbox()
-    number_of_msgs_before_test = len(wd.find_elements_by_class_name("topictitle"))
-    app.session.create_new_priv_message("gholak", "testowa wiadomość", "test_pm")
+    number_of_msgs_before_test = app.session.number_of_topics()
+    app.session.create_new_priv_message("lmalinowski", "testowa wiadomość", "test_pm aaaaaaaaaaaaa")
     app.session.go_to_outbox()
-    number_of_msgs_after_test = len(wd.find_elements_by_class_name("topictitle"))
+    number_of_msgs_after_test = app.session.number_of_topics()
     assert number_of_msgs_before_test is not number_of_msgs_after_test
