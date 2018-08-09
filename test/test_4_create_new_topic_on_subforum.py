@@ -11,7 +11,6 @@ def app(request):
     return fixture
 
 def test_create_new_topic_on_subforum(app):
-    wd = app.wd
     subject_of_topic = app.session.random_chars(5, 15)
     content_of_topic = app.session.random_chars(50, 100)
     subforum_title = config.main_subforum_title

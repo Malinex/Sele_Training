@@ -72,14 +72,12 @@ class SessionHelper:
         for e in list_of_topics:
             if e.text == subject:
                 return True
-            else:
-                return False
 
     def go_to_private_messages(self, wd):
         wd = self.app.wd
         wd.find_element_by_xpath("//*[@id='nav-main']/li[4]/a/span").click()
 
-    def go_to_outbox_from_private_messages(self):
+    def go_to_outbox_by_private_messages(self):
         wd = self.app.wd
         self.go_to_private_messages(self)
         private_messages_menu = wd.find_elements_by_tag_name("span")
@@ -114,14 +112,13 @@ class SessionHelper:
         submit_message = wd.find_element_by_name("post")
         submit_message.click()
 
+
     def check_message_in_outbox(self, subject):
         wd = self.app.wd
         messages_in_outbox = wd.find_elements_by_class_name("topictitle")
         for e in messages_in_outbox:
             if e.text == subject:
                 return True
-            else:
-                return False
 
     def get_subforum_name(self):
         wd = self.app.wd

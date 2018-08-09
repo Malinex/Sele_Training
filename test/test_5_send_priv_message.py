@@ -10,11 +10,10 @@ def app(request):
 
 
 def test_send_priv_message(app):
-    wd = app.wd
     subject_of_message = app.session.random_chars(5, 15)
     content_of_message = app.session.random_chars(50, 100)
-    recipient = config.recipient
+    recipient = config.username2
     app.session.login(config.username, config.password)
     app.session.create_new_priv_message(recipient, subject_of_message, content_of_message)
-    app.session.go_to_outbox_after_sending_a_message()
+    app.session.go_to_outbox_by_private_messages()
     assert app.session.check_message_in_outbox(subject_of_message)
