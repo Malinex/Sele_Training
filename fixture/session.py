@@ -5,7 +5,7 @@ from selenium.webdriver.common.by import By
 import string
 from random import *
 
-import pages.login_page
+from pages.login_page import Login_Page
 from cfg_ATT import config
 
 
