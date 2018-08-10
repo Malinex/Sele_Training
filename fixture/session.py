@@ -1,5 +1,4 @@
 import time
-import json
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
@@ -73,16 +72,23 @@ class SessionHelper:
             if e.text == subject:
                 return True
 
-    def go_to_private_messages(self, wd):
+    def go_to_private_messages(self):
         wd = self.app.wd
         wd.find_element_by_xpath("//*[@id='nav-main']/li[4]/a/span").click()
 
+    def check_if_user_in_private_masseges(self):
+        wd = self.app.wd
+        return wd.find_element_by_xpath("//*[@id='tabs']/ul/li[4]/a").text == "Private messages"
+
+
+
     def go_to_outbox_by_private_messages(self):
         wd = self.app.wd
-        self.go_to_private_messages(self)
+        wait = self.wait()
+        wait.until(EC.visibility_of_element_located((By.TAG_NAME, "span")))
         private_messages_menu = wd.find_elements_by_tag_name("span")
         for e in private_messages_menu:
-            if e.text == "Outbox":
+            if e.text[0:6] == 'Outbox':
                 e.click()
                 break
 
@@ -92,7 +98,7 @@ class SessionHelper:
 
     def create_new_priv_message(self, recipient, subject, message):
         wd = self.app.wd
-        self.go_to_private_messages(self)
+        self.go_to_private_messages()
         wd.find_element_by_xpath("//a[@class='button']").click()
         recipient_box = wd.find_element_by_id("username_list")
         recipient_box.click()
@@ -111,7 +117,6 @@ class SessionHelper:
         time.sleep(2)
         submit_message = wd.find_element_by_name("post")
         submit_message.click()
-
 
     def check_message_in_outbox(self, subject):
         wd = self.app.wd
