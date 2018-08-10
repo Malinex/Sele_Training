@@ -11,7 +11,7 @@ def app(request):
 
 
 def test_send_priv_message(app):
-    subject_of_message = app.session.random_chars(10, 15)
+    subject_of_message = "test message " + app.session.random_chars(10, 15)
     content_of_message = app.session.random_chars(100, 150)
     recipient = config.username2
     app.session.login(config.username, config.password)
