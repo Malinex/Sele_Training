@@ -4,7 +4,10 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 import string
 from random import *
+
+import pages.login_page
 from cfg_ATT import config
+
 
 class SessionHelper:
 
@@ -19,7 +22,7 @@ class SessionHelper:
         wd = self.app.wd
         self.app.open_home_page()
         username_box = wd.find_element_by_id("username")
-        username_box.click()
+        pages.login_page.username_box.click()
         username_box.clear()
         username_box.send_keys(username)
         password_box = wd.find_element_by_id("password")
