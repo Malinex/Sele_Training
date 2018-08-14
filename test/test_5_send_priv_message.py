@@ -25,3 +25,6 @@ def test_send_priv_message(app):
     assert app.pm.check_message_in_outbox(subject_of_message)
     app.session.logout()
     app.session.login(config.username2, config.password2)
+    app.pm.go_to_private_messages()
+    app.pm.open_the_message_in_inbox(subject_of_message)
+    assert app.pm.check_opened_message(subject_of_message)

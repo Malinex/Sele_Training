@@ -14,11 +14,11 @@ class private_messages_helper:
 
     def go_to_private_messages(self):
         wd = self.app.wd
-        wd.find_element_by_xpath("//*[@id='nav-main']/li[4]/a/span").click()
+        wd.find_element_by_css_selector("li.rightside > a > span").click()
 
     def check_if_user_in_private_masseges(self):
         wd = self.app.wd
-        return wd.find_element_by_xpath("//*[@id='tabs']/ul/li[4]/a").text == "Private messages"
+        return wd.find_element_by_css_selector("li.rightside > a > span").text == "Private messages"
 
     def go_to_outbox_by_private_messages(self):
         wd = self.app.wd
@@ -80,3 +80,14 @@ class private_messages_helper:
         else:
             return False
 
+    def open_the_message_in_inbox(self, subject):
+        wd = self.app.wd
+        messages_in_outbox = wd.find_elements_by_class_name("topictitle")
+        for e in messages_in_outbox:
+            if e.text == subject:
+                e.click()
+                break
+
+    def check_opened_message(self, subject):
+        wd = self.app.wd
+        return wd.find_element_by_class_name("first").text == subject
