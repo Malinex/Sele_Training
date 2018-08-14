@@ -14,4 +14,4 @@ def app(request):
 def test_check_web(app):
     wd = app.wd
     app.session.open_home_page()
-    assert wd.title == "ATT Nauka - Index page"
+    assert app.session.check_tittle("ATT Nauka - Index page")

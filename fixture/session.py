@@ -50,6 +50,10 @@ class SessionHelper:
         allchars = " " + string.ascii_letters + " " + string.punctuation + " " + string.digits + " "
         return "".join(choice(allchars) for x in range(randint(min_chars, max_chars)))
 
+    def check_tittle(self, page_title):
+        wd = self.app.wd
+        return wd.title == page_title
+
     """
     nazwaForum <- wejście
     sprawdz gdzie na liscie forów jest takie o tej nazwie <- elementy -> for icz
