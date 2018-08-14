@@ -20,5 +20,6 @@ def test_send_priv_message(app):
     app.pm.go_to_private_messages()
     assert app.pm.check_if_user_in_private_masseges()
     app.pm.create_new_priv_message(recipient, subject_of_message, content_of_message)
+    assert app.pm.check_sending_the_message()
     app.pm.go_to_outbox_after_sending_a_message()
     assert app.pm.check_message_in_outbox(subject_of_message)

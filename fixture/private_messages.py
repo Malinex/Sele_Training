@@ -42,7 +42,6 @@ class private_messages_helper:
             print("idzie elsem")
             return self.go_to_outbox_by_private_messages()
 
-
     def create_new_priv_message(self, recipient, subject, message):
         wd = self.app.wd
         self.go_to_private_messages()
@@ -74,3 +73,10 @@ class private_messages_helper:
         for e in messages_in_outbox:
             if e.text == subject:
                 return True
+    def check_sending_the_message(self):
+        wd = self.app.wd
+        if EC.text_to_be_present_in_element_value((By.ID, "page_body"), ('This message has been sent successfully.')):
+            return True
+        else:
+            return False
+
