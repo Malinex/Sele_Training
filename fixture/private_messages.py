@@ -20,11 +20,9 @@ class private_messages_helper:
         wd = self.app.wd
         return wd.find_element_by_xpath("//*[@id='tabs']/ul/li[4]/a").text == "Private messages"
 
-
-
     def go_to_outbox_by_private_messages(self):
         wd = self.app.wd
-        wait = self.wait()
+        wait = WebDriverWait(wd, 5)
         wait.until(EC.visibility_of_element_located((By.TAG_NAME, "span")))
         private_messages_menu = wd.find_elements_by_tag_name("span")
         for e in private_messages_menu:
@@ -54,8 +52,7 @@ class private_messages_helper:
         pm_message_box.click()
         pm_message_box.clear()
         pm_message_box.send_keys(message)
-        time.sleep(2)
-        submit_message = wd.find_element_by_name("post")
+        submit_message = WebDriverWait(wd, 50).until(EC.presence_of_element_located((By.NAME, "post")))
         submit_message.click()
 
     def check_message_in_outbox(self, subject):
