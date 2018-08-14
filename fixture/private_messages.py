@@ -91,3 +91,14 @@ class private_messages_helper:
     def check_opened_message(self, subject):
         wd = self.app.wd
         return wd.find_element_by_class_name("first").text == subject
+
+    def go_to_send_private_messages(self):
+        wd = self.app.wd
+        wait = WebDriverWait(wd, 5)
+        self.go_to_private_messages()
+        wait.until(EC.visibility_of_element_located((By.TAG_NAME, "span")))
+        private_messages_menu = wd.find_elements_by_tag_name("span")
+        for e in private_messages_menu:
+            if e.text[0:4] == 'Sent':
+                e.click()
+                break
