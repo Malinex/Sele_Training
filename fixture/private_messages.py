@@ -23,6 +23,7 @@ class private_messages_helper:
     def go_to_outbox_by_private_messages(self):
         wd = self.app.wd
         wait = WebDriverWait(wd, 5)
+        self.go_to_private_messages()
         wait.until(EC.visibility_of_element_located((By.TAG_NAME, "span")))
         private_messages_menu = wd.find_elements_by_tag_name("span")
         for e in private_messages_menu:
@@ -32,7 +33,15 @@ class private_messages_helper:
 
     def go_to_outbox_after_sending_a_message(self):
         wd = self.app.wd
-        wd.find_element_by_xpath("//a[contains(text(),'Return to your “Outbox” folder')]").click()
+        wait = WebDriverWait(wd, 5)
+        go_to_outbox = wait.until(EC.visibility_of_element_located((By.XPATH, "//a[contains(text(),'Return to your “Outbox” folder')]")))
+        if  EC._element_if_visible(go_to_outbox):
+            print("idzie isem")
+            go_to_outbox.click()
+        else:
+            print("idzie elsem")
+            return self.go_to_outbox_by_private_messages()
+
 
     def create_new_priv_message(self, recipient, subject, message):
         wd = self.app.wd
@@ -52,8 +61,12 @@ class private_messages_helper:
         pm_message_box.click()
         pm_message_box.clear()
         pm_message_box.send_keys(message)
-        submit_message = WebDriverWait(wd, 50).until(EC.presence_of_element_located((By.NAME, "post")))
-        submit_message.click()
+        submit_message = WebDriverWait(wd, 10).until(EC.element_to_be_clickable((By.NAME, "post")))
+        if len(subject) > 200:
+            submit_message.click()
+        else:
+            time.sleep(2)
+            submit_message.click()
 
     def check_message_in_outbox(self, subject):
         wd = self.app.wd
