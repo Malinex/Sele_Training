@@ -73,6 +73,7 @@ class private_messages_helper:
         for e in messages_in_outbox:
             if e.text == subject:
                 return True
+
     def check_sending_the_message(self):
         wd = self.app.wd
         if EC.text_to_be_present_in_element_value((By.ID, "page_body"), ('This message has been sent successfully.')):
@@ -102,3 +103,10 @@ class private_messages_helper:
             if e.text[0:4] == 'Sent':
                 e.click()
                 break
+
+    def check_message_in_sent_folder(self, subject):
+        wd = self.app.wd
+        messages_in_sent = wd.find_elements_by_class_name("topictitle")
+        for e in messages_in_sent:
+            if e.text == subject:
+                return True

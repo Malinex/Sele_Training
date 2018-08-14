@@ -31,3 +31,4 @@ def test_send_priv_message(app):
     app.session.logout()
     app.session.login(config.username, config.password)
     app.pm.go_to_send_private_messages()
+    assert app.pm.check_message_in_sent_folder(subject_of_message)
