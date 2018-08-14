@@ -45,29 +45,6 @@ class SessionHelper:
         wd = self.app.wd
         return wd.find_element_by_id("username_logged_in").text
 
-    def open_subforum_page(self, subforum_title):
-        wd = self.app.wd
-        subforums = wd.find_elements_by_class_name("forumtitle")
-        for e in subforums:
-            if e.text == subforum_title:
-                e.click()
-                break
-
-
-
-    def check_subject_in_list_of_topics(self, subject):
-        wd = self.app.wd
-        list_of_topics = wd.find_elements_by_class_name("topictitle")
-        for e in list_of_topics:
-            if e.text == subject:
-                return True
-
-
-
-    def get_subforum_name(self):
-        wd = self.app.wd
-        return wd.find_element_by_class_name("forum-title").text
-
     def random_chars(self, min_chars, max_chars):
         wd = self.app.wd
         allchars = " " + string.ascii_letters + " " + string.punctuation + " " + string.digits + " "

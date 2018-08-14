@@ -15,11 +15,10 @@ def test_create_new_topic_on_subforum(app):
     content_of_topic = app.session.random_chars(50, 100)
     subforum_title = config.main_subforum_title
     app.session.login(config.username, config.password)
-    app.session.open_subforum_page(subforum_title)
-    app.session.create_new_topic(subject_of_topic, content_of_topic)
-    app.session.login(config.username, config.password)
-    app.session.open_subforum_page(subforum_title)
-    assert app.session.check_subject_in_list_of_topics(subject_of_topic)
+    app.forum.open_subforum_page(subforum_title)
+    app.forum.create_new_topic(subject_of_topic, content_of_topic)
+    app.forum.return_to_topics_list()
+    assert app.forum.check_subject_in_list_of_topics(subject_of_topic)
 
 
 
