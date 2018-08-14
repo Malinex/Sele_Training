@@ -1,4 +1,5 @@
 from fixture.private_messages import private_messages_helper
+from fixture.forum import forum_helper
 from fixture.session import SessionHelper
 from selenium import webdriver
 from cfg_ATT import config
@@ -9,6 +10,7 @@ class Application:
         self.wd = webdriver.Chrome()
         self.session = SessionHelper(self)
         self.pm = private_messages_helper(self)
+        self.forum = forum_helper(self)
 
     def open_home_page(self):
         wd = self.wd
